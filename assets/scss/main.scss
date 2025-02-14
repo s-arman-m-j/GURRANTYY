@@ -1,0 +1,29 @@
+// assets/scss/main.scss
+@import 'variables';
+@import 'mixins';
+@import 'components/warranty-form';
+@import 'components/notifications';
+@import 'utilities';
+
+// بهینه‌سازی‌های کلی
+html {
+    font-display: optional;
+}
+
+img {
+    loading: lazy;
+}
+
+// استفاده از CSS Container Queries
+.warranty-container {
+    container-type: inline-size;
+    container-name: warranty;
+}
+
+@container warranty (min-width: 768px) {
+    .warranty-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}

@@ -1,0 +1,325 @@
+.asg-reports-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.asg-report-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.asg-report-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.asg-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.asg-stat-item {
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.asg-report-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.tablenav-pages {
+    margin: 1em 0;
+    text-align: left;
+}
+
+.tablenav-pages a,
+.tablenav-pages span {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.tablenav-pages .current {
+    background: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+/* فایل asg-reports.css */
+
+.asg-reports-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.asg-report-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.asg-report-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.asg-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.asg-stat-item {
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* استایل‌های نمودار */
+canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+/* استایل‌های فیلترها */
+.asg-filter-row {
+    margin: 15px 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.asg-filter {
+    flex: 1;
+    min-width: 200px;
+}
+
+.asg-filter label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* استایل‌های انتخاب ستون‌ها */
+.asg-column-selector {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.asg-column-selector h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.asg-column-selector label {
+    margin-right: 15px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* استایل‌های دکمه‌ها */
+.asg-export-buttons {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.asg-export-buttons .button {
+    display: inline-flex;
+    align-items: center;
+}
+
+.asg-export-buttons .dashicons {
+    margin-right: 5px;
+}
+
+/* استایل‌های جدول نتایج */
+.asg-report-results {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.asg-report-results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.asg-report-results th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.asg-report-results th,
+.asg-report-results td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+}
+
+/* استایل‌های پیام خالی بودن */
+.asg-no-results {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+/* استایل‌های مخصوص پرینت */
+@media print {
+    .asg-filter-row,
+    .asg-column-selector,
+    .asg-export-buttons,
+    #adminmenuwrap,
+    #adminmenuback,
+    #wpadminbar,
+    #wpfooter {
+        display: none !important;
+    }
+    
+    .wrap {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .wp-list-table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .wp-list-table th,
+    .wp-list-table td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+    
+    .wp-list-table img {
+        max-width: 50px !important;
+        height: auto !important;
+    }
+    
+    .print-header {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #000;
+        padding-bottom: 20px;
+    }
+    
+    .print-footer {
+        display: block !important;
+        text-align: left;
+        margin-top: 20px;
+        font-size: 12px;
+        border-top: 1px solid #000;
+        padding-top: 10px;
+    }
+}
+
+/* استایل‌های عمومی هدر و فوتر پرینت */
+.print-header,
+.print-footer {
+    display: none;
+}
+
+.print-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.print-header li {
+    margin: 5px 0;
+}
+
+/* استایل‌های Select2 */
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 34px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 34px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 32px;
+}
+/* استایل‌های واکنش‌گرا برای فیلترها */
+@media (max-width: 768px) {
+    .asg-filter-row {
+        flex-direction: column;
+    }
+
+    .asg-filter {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .asg-export-buttons {
+        flex-direction: column;
+    }
+
+    .asg-export-buttons .button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .asg-report-results table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .asg-report-results th, .asg-report-results td {
+        white-space: nowrap;
+    }
+}

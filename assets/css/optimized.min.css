@@ -1,0 +1,40 @@
+/* optimized.min.css */
+
+/* ادغام و بهینه‌سازی استایل‌های عمومی */
+.asg-container{max-width:1200px;margin:0 auto;padding:15px}.asg-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.asg-card{background:#fff;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1);transition:transform .2s}.asg-card:hover{transform:translateY(-2px)}
+
+/* استایل‌های فرم */
+.asg-form{width:100%;max-width:800px;margin:0 auto}.asg-form-group{margin-bottom:15px}.asg-form-row{display:flex;gap:15px;margin-bottom:15px}.asg-input,.asg-select,.asg-textarea{width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-family:inherit}.asg-input:focus,.asg-select:focus,.asg-textarea:focus{border-color:#007cba;outline:none;box-shadow:0 0 0 1px #007cba}
+
+/* استایل‌های دکمه‌ها */
+.asg-button{display:inline-flex;align-items:center;justify-content:center;padding:8px 16px;border:none;border-radius:4px;background:#007cba;color:#fff;cursor:pointer;transition:.2s ease}.asg-button:hover{background:#006ba1}.asg-button-secondary{background:#6c757d}.asg-button-secondary:hover{background:#5a6268}.asg-button-success{background:#28a745}.asg-button-success:hover{background:#218838}
+
+/* استایل‌های جدول */
+.asg-table{width:100%;border-collapse:collapse;margin:15px 0}.asg-table th,.asg-table td{padding:12px;text-align:right;border-bottom:1px solid #ddd}.asg-table th{background:#f8f9fa;font-weight:600}.asg-table tr:hover{background:#f8f9fa}
+
+/* استایل‌های وضعیت */
+.asg-status{display:inline-block;padding:4px 8px;border-radius:4px;font-size:.875em;font-weight:500}.asg-status-pending{background:#fff3cd;color:#856404}.asg-status-approved{background:#d4edda;color:#155724}.asg-status-rejected{background:#f8d7da;color:#721c24}
+
+/* استایل‌های آپلود تصویر */
+.asg-upload-wrapper{border:2px dashed #ddd;padding:20px;text-align:center;border-radius:8px;background:#f8f9fa}.asg-upload-wrapper.dragover{border-color:#007cba;background:#e3f2fd}.asg-image-preview{margin-top:10px}.asg-image-preview img{max-width:200px;height:auto;border-radius:4px}
+
+/* استایل‌های نوتیفیکیشن */
+.asg-notification{position:fixed;bottom:20px;right:20px;padding:12px 20px;border-radius:4px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:1000;animation:slideIn .3s ease}.asg-notification-success{border-left:4px solid #28a745}.asg-notification-error{border-left:4px solid #dc3545}.asg-notification-warning{border-left:4px solid #ffc107}@keyframes slideIn{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
+
+/* استایل‌های دیت‌پیکر فارسی */
+.datepicker-plot-area{font-family:inherit;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.15);border-radius:8px;padding:10px}.datepicker-plot-area .datepicker-day-view .table-days td.selected span{background-color:#007cba}.datepicker-plot-area .datepicker-month-view .month-item.selected{background-color:#007cba}
+
+/* استایل‌های ریسپانسیو */
+@media (max-width:768px){.asg-grid{grid-template-columns:1fr}.asg-form-row{flex-direction:column}.asg-table-wrapper{overflow-x:auto}.asg-table{min-width:600px}}
+
+/* استایل‌های گزارشات */
+.asg-report-card{background:#fff;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1);padding:20px;margin-bottom:20px}.asg-chart-wrapper{height:300px;margin:20px 0}.asg-stat-item{text-align:center;padding:15px}.asg-stat-value{font-size:24px;font-weight:bold;color:#007cba}.asg-stat-label{color:#6c757d;font-size:.875em}
+
+/* استایل‌های بخش مدیریت */
+.asg-admin-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.asg-filter-row{display:flex;gap:10px;margin-bottom:15px;flex-wrap:wrap}.asg-filter{flex:1;min-width:200px}.asg-column-selector{background:#fff;padding:15px;border-radius:4px;margin-bottom:20px}.asg-column-selector label{margin-right:15px}
+
+/* استایل‌های پیشرفته */
+.asg-loading{position:relative;pointer-events:none}.asg-loading::after{content:'';position:absolute;inset:0;background:rgba(255,255,255,.8);z-index:1}.asg-loading::before{content:'';position:absolute;top:50%;left:50%;width:30px;height:30px;margin:-15px;border:2px solid #007cba;border-top-color:transparent;border-radius:50%;animation:spin 1s linear infinite;z-index:2}@keyframes spin{to{transform:rotate(360deg)}}
+
+/* بهینه‌سازی عملکرد */
+.asg-lazy-load{opacity:0;transition:opacity .3s}.asg-lazy-load.loaded{opacity:1}img.asg-lazy{filter:blur(10px);transition:filter .3s}img.asg-lazy.loaded{filter:blur(0)}

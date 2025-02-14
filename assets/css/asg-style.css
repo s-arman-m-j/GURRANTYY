@@ -1,0 +1,64 @@
+/* Common Styles */
+.asg-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.asg-card-header {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.asg-card-body {
+    padding: 15px;
+}
+
+.asg-form-group {
+    margin-bottom: 15px;
+}
+
+.asg-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.asg-select2-container {
+    width: 100% !important;
+}
+
+.asg-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.asg-button {
+    background: #0085ba;
+    border-color: #0073aa;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.asg-button:hover {
+    background: #0073aa;
+}
+
+.asg-image-preview {
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+.asg-image-preview img {
+    max-width: 100%;
+    height: auto;
+}
